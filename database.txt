@@ -1,24 +1,2 @@
 [
-	{
-		"user": {
-			"accessToken": "c1b69de5-b246-4be5-9f00-8c45121f4e14",
-			"expiresIn": null,
-			"scopes": "accounts:write collaborations:write boards:write boards:read accounts:read",
-			"userId": "70108",
-			"tokenType": "Bearer",
-			"refreshToken": null
-		},
-		"accountId": "3074457346222454696"
-	},
-	{
-		"user": {
-			"accessToken": "e2d12110-ceb9-49ef-877d-d27fdd28db1e",
-			"expiresIn": null,
-			"scopes": "accounts:read accounts:write boards:read boards:write collaborations:read collaborations:write memberships:read",
-			"userId": "70108",
-			"tokenType": "bearer",
-			"refreshToken": null
-		},
-		"accountId": "3074457346222454696"
-	}
 ]
