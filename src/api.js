@@ -5,7 +5,7 @@ const oAuth = {
 	getToken(code, clientId) {
 		const uri = `${config.API_BASE}/oauth/token?grant_type=authorization_code&client_id=${clientId}&client_secret=${
 			config.CLIENT_SECRET
-		}&code=${code}&redirect_uri=${config.REDIRECT_URI}`
+		}&code=${code}&redirect_uri=${config.BASE_URL}/oauth`
 		const options = {method: 'POST', uri: uri}
 		return rp(options)
 			.then(res => JSON.parse(res))

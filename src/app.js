@@ -1,5 +1,6 @@
 const express = require('express')
 const bodyParser = require('body-parser')
+const cors = require('cors')
 const mustacheExpress = require('mustache-express')
 
 const api = require('./api')
@@ -11,6 +12,7 @@ const app = express()
 const port = 3000
 
 app.engine('html', mustacheExpress())
+app.use(cors())
 app.use('/static', express.static('static'))
 app.set('view engine', 'html')
 app.set('views', __dirname + '/../views')
@@ -18,7 +20,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
 
 app.get('/', (req, res) => {
-	res.render('index')
+	res.render('index', {baseUrl: config.BASE_URL})
 })
 
 app.get('/playground', async (req, res) => {

@@ -7,7 +7,7 @@ Handy playground for playing with RealtimeBoard API and Webhooks.
 2) Run `npm run start`
 3) Run `ngrok http 3000`
 4) Edit `config.js`:
-    - Set REDIRECT_URI from ngrok
+    - Set BASE_URL from ngrok
     - Set CLIENT_SECRET from the App settings
     - Set VERIFICATION_TOKEN from the App settings
 
