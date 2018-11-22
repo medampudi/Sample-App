@@ -28,6 +28,7 @@ function saveDBToFile() {
 module.exports = {
 	init: initDB,
 	addAuthorization: function(auth) {
+    dbInstance = dbInstance.filter(dbAuth => dbAuth.accountId !== auth.accountId && dbAuth.user.userId !== auth.user.userId)
 		dbInstance.push(auth)
 		saveDBToFile()
 	},
